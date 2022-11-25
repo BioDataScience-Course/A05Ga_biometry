@@ -1,0 +1,75 @@
+---
+title: "Exploration des données"
+author: "___"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SciViews::R(lang = "fr")
+```
+
+<!--# Cette balise est un commentaire.-->
+
+<!--% Cette balise est une consigne.-->
+
+<!--# Ce document est un carnet de notes. Il est par conséquent moins formel qu'un rapport. Vous pouvez structurer vos interprétations sous la forme de liste..-->
+
+# Exploration des données
+
+<!-- Importez le tableau `biometry.rds`-->
+
+```{r import}
+
+```
+
+<!-- Réalisez un graphique et un tableau résumant les observations par étudiant. Tous les tableaux et graphiques doivent être interprétés..-->
+
+```{r plot1}
+
+```
+
+<!--% Interprétez le graphique ci-dessus en 1 à 3 phrases. -->
+
+```{r tab1}
+
+```
+
+<!--% Interprétez le tableau ci-dessus en 1 à 3 phrases. -->
+
+```{r plot2}
+
+```
+
+<!--% Interprétez le graphique ci-dessus en 1 à 3 phrases. -->
+
+```{r tab2}
+
+```
+
+<!--% Interprétez le tableau ci-dessus en 1 à 3 phrases. -->
+
+```{r plot3}
+
+```
+
+<!--% Interprétez le graphique ci-dessus en 1 à 3 phrases. -->
+
+```{r tab3}
+
+```
+
+<!--% Interprétez le tableau ci-dessus en 1 à 3 phrases. -->
+
+```{r plot4}
+
+```
+
+<!--% Interprétez le graphique ci-dessus en 1 à 3 phrases. -->
+
+```{r tab4}
+
+```
+
+<!--% Interprétez le tableau ci-dessus en 1 à 3 phrases. -->
