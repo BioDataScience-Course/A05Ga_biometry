@@ -1,25 +1,30 @@
-# Protocole et collecte de données de santé humaine.
+# Collecte de données liées à l'obésité humaine
 
 ## Objectifs
 
-Ce projet est libre et de groupe. Ce projet doit vous permettre de démontrer les compétences suivantes :
+Ce projet est libre et réalisé par groupe de 2 à 4 étudiants. Il doit vous permettre de démontrer les compétences suivantes :
 
 -   définir un protocole d'expérience
--   collecter des données
+-   collecter des données et les encoder correctement
+-   se sensibiliser à la précision des mesures et à l'intercalibration
+-   rédiger un dictionnaire des données
+-   respecter la vie privée (RGPD) via la pseudonymisation des données
 -   remanier un tableau de données
 -   réaliser et interpréter des graphiques et des tableaux
 
 ## Consignes
 
-Ce projet se décompose en plusieurs phases sur le module 5 et le module 6.
+Ce projet se décompose en plusieurs phases qui s'étalent sur le module 5 et le module 6.
 
-### Phase 1 : MODULE 5
+### Phase 1 (module 5)
 
-La première phase de ce travail est une discussion par groupe dirigé par vos encadrants. Elle consiste en la mise en place d'un protocole d'expérience pertinent sur la santé humaine.
+Dans un premier temps, vous réfléchissez aux variables qu'il vous faudra employer pour déterminer l'IMC des personnes incluses dans l'étude et pour le mettre en relation avec ses caractéristiques d'une manière générale. À la fin de cette phase, vous avez défini les mesures à réaliser et chaque étudiant collecte les données relatives à quatre individus.
 
-### Phase 2 : MODULE 5 & MODULE 6
+### Phase 2 (modules 5 & 6)
 
-Cliquez sur le lien suivant afin d'accéder à Google Sheet et de réaliser un dictionnaire des données. Ce document est un document collectif pour l'ensemble des étudiants du cours de Science des données I : visualisation.
+Vous allez définir un protocole permettant de pseudonymiser les données. Ensuite, vous allez encoder voos données respectives dans un fichier commun.
+
+Cliquez sur le lien suivant afin d'accéder à Google Sheet et complétez le dictionnaire des données. Ce document est un document collectif pour l'ensemble des étudiants du cours de Science des données I : visualisation.
 
 <https://docs.google.com/spreadsheets/d/1zBjQg06Me0pUTh9Y7ANo1eOorZkc24ZkuhUqqQeXHWA/edit?usp=sharing>
 
@@ -27,16 +32,14 @@ Cliquez sur le lien suivant afin d'accéder à un second Google Sheet et de comp
 
 <https://docs.google.com/spreadsheets/d/1wQUI3DQR05R3b9FcQnaxtc8T8aNqHXFKW0KhpiyHn0w/edit?usp=sharing>
 
-Attention, toutes les personnes disposant des deux liens fournis ci-dessus ont un accès libre en édition sur les documents.
+### Phase 3 (module 6)
 
-### Phase 3 : MODULE 6
-
-Le dictionnaire des données et le tableau de données peuvent être directement importés dans R à avec la fonction `read$csv()` et les liens suivants
+Le dictionnaire et le tableau de données peuvent être directement importés dans R avec `read$csv()` et les liens suivants :
 
 -   Dictionnaire des données : <https://docs.google.com/spreadsheets/d/e/2PACX-1vS6Zv8rMf1eQVOcLanotqeJ8rw2eGVQ3sAXfJk3_mxUDcwALcn9irtcBK42ynfUSuuYA4X7vk4yiBs3/pub?output=csv>
 
 -   Tableau de données : <https://docs.google.com/spreadsheets/d/e/2PACX-1vS3hqfeIg6xGEliHpxQAZEvQxqEdQFSYDll0gysoS8seTjk9BNKHR99poZAOR2Zi5QhPdeSE9Rq4LPA/pub?output=csv>
 
-Au sein du script R nommé `import_tidy.R`, importez, remaniez, ajoutez les labels et les unités et enfin sauvegardé localement vos données nettoyées. Sauvegardez les données dans le dossier `data/` et nommez-les `biometry.rds`
+Dans le script `R/import_tidy.R`, importez, remaniez, ajoutez les labels et les unités et enfin sauvegardez localement vos données nettoyées. Sauvegardez les données dans le dossier `data/` et nommez le fichier `biometry.rds`
 
-Une fois votre tableau `biometry.rds` obtenu, complétez le document `bio_explo.Rmd`.
+Une fois votre tableau `data/biometry.rds` obtenu, complétez le document `docs/bio_explo.Rmd`.

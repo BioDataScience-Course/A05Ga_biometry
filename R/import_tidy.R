@@ -1,7 +1,6 @@
-# Importation et remaniement des données
+# Étude de l'obésité - Importation et remaniement des données
 # Auteur : 
 # Date :
-###############################################################################
 ###############################################################################
 
 # Packages utiles
@@ -27,12 +26,15 @@ biometry <- read$csv(
 
 # Ajout des types de variables  ---------
 
+
 # Correction, filtre, sélection sur le tableau des données  ---------
 
+
 # Ajout des labels et des unités  ---------
+
 
 # Sauvegarde local des données importantes  ---------
 write$rds(biometry, "___", compress = "xz")
 
-# Elimination de l'environnement global des objets associés à ce script
-rm(list = ls())
+# Elimination des objets de l'environnement global
+rm(dico, biometry)

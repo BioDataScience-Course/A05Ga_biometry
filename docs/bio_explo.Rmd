@@ -1,5 +1,5 @@
 ---
-title: "Exploration des données"
+title: "Étude de l'obésité - Exploration"
 author: "___"
 date: "`r Sys.Date()`"
 output: html_document
@@ -24,7 +24,7 @@ SciViews::R(lang = "fr")
 
 ```
 
-<!-- Réalisez un graphique et un tableau résumant les observations par étudiant. Tous les tableaux et graphiques doivent être interprétés..-->
+<!-- Pour chaque étudiant, réalisez un graphique et un tableau résumant les observations. Tous les tableaux et graphiques doivent être interprétés. -->
 
 ```{r plot1}
 
