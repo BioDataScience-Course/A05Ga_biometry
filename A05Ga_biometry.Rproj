@@ -13,3 +13,7 @@ RnwWeave: knitr
 LaTeX: XeLaTeX
 
 AutoAppendNewline: Yes
+
+BuildType: None
+
+SpellingDictionary: fr_FR

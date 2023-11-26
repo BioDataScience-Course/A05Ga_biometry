@@ -6,35 +6,37 @@
 # Packages utiles
 SciViews::R()
 
-# Importation des données brutes ---------
-## Création des dossier `data/` et `data_raw/`
-fs::dir_create("data/data_raw")
+# Importation des données brutes
+
+## Création des dossier `data/` et `cache/`
+fs::dir_create("data/cache")
 
 ## Importation du dictionnaire des données
-dico <- read$csv(
+biometry_metadata <- read$csv(
   "___",
-  cache_file = "data/data_raw/dictionnary.csv",
+  cache_file = "data/cache/biometry_metadata_raw.csv",
   force = FALSE
 )
 
 ## Importation du tableau de données
 biometry <- read$csv(
   "___",
-  cache_file = "data/data_raw/biometry_raw.csv",
+  cache_file = "data/cache/biometry_raw.csv",
   force = FALSE
 )
 
-# Ajout des types de variables  ---------
+# Modification des types de variables
 
 
-# Correction, filtre, sélection sur le tableau des données  ---------
+# Correction, filtre, sélection sur le tableau des données
 
 
-# Ajout des labels et des unités  ---------
+# Ajout des labels et des unités
 
 
-# Sauvegarde local des données importantes  ---------
+# Sauvegarde local des données importantes (voir README.md !)
 write$rds(biometry, "___", compress = "xz")
+write$rds(biometry_metadata, "___", compress = "xz")
 
-# Elimination des objets de l'environnement global
-rm(dico, biometry)
+# Élimination des objets de l'environnement global
+rm(biometry_metadata, biometry)
